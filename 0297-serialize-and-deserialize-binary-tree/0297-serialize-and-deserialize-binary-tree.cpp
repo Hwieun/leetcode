@@ -39,8 +39,6 @@ public:
         string s;
         vector<TreeNode*> v;
         while(ss >> s) {
-            if(s.compare(",") == 0) continue;
-            
             if(s.compare("null") == 0) v.push_back(nullptr);
             else v.push_back(new TreeNode(stoi(s)));
         }
